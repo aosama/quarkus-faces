@@ -11,20 +11,40 @@
 			"installMaven": "true",
 			"installGradle": "false"
 		}
-		,
-			"ghcr.io/devcontainers/features/sshd:1": {
+		,"ghcr.io/devcontainers/features/sshd:1": {
 				"version": "latest"
 			}
-		
 	}
 	
-	
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	,"forwardPorts": [8081]
+	,
+	"forwardPorts": [
+		8081
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"maciejdems.add-to-gitignore",
+				"Angular.ng-template",
+				"njpwerner.autodocstring",
+				"redhat.fabric8-analytics",
+				"Syler.ignore",
+				"eamodio.gitlens",
+				"starkwang.markdown",
+				"yzhang.markdown-all-in-one",
+				"shd101wyy.markdown-preview-enhanced",
+				"esbenp.prettier-vscode",
+				"redhat.vscode-quarkus",
+				"redhat.vscode-microprofile",
+				"redhat.vscode-xml"
+			]
+		}
+	}
 
+	
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//,"postCreateCommand": "java -version; mvn --version"
+	//,"postCreateCommand": "sudo apt-get update; sudo apt-get install mc -y"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
