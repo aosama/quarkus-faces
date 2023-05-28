@@ -1,4 +1,4 @@
-package org.testing;
+package org.primefaces.showcase;
 
 import jakarta.inject.Inject;
 import org.primefaces.showcase.service.CustomerService;
